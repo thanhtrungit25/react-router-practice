@@ -38,7 +38,7 @@ export default function Sidebar({ title, list, loading, match, location }) {
           <CustomLink
             key={item}
             to={{
-              pathName: `${match.url}/${slug(item)}`,
+              pathname: `${match.url}/${slug(item)}`,
               search: location.search
             }}
           >
