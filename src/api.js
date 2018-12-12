@@ -48,7 +48,7 @@ export function getTeamNames() {
 
 export function getArticle(teamId, id) {
   return new Promise(res => {
-    setTimeout(() => generateArticle(teamId, id), 700);
+    setTimeout(() => res(generateArticle(teamId, id)), 700);
   });
 }
 
